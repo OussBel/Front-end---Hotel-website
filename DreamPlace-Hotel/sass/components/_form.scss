@@ -1,0 +1,144 @@
+.form {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 7rem);
+  grid-gap: 6.5rem;
+  grid-auto-rows: 7rem;
+
+  &__input {
+    padding-left: 4rem;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    background-color: inherit;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $color-green;
+
+      &:invalid {
+        border-bottom: 1px solid $color-red;
+      }
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      padding-left: 1rem;
+    }
+  }
+
+  &__input-name {
+    grid-column: 1 / span 3;
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__input-phone {
+    grid-column: 1 / span 3;
+    grid-row: 2/3;
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__input-email {
+    grid-column: 1 / span 3;
+    grid-row: 3/4;
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__input-subject {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 3/-1;
+    }
+  }
+
+  &__text-area {
+    grid-column: 4/-1;
+    grid-row: 2/-1;
+    background-color: inherit;
+    padding: 2rem;
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 3/-1;
+    }
+  }
+
+  &__btn {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    font-size: inherit;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 1.25px;
+    color: $color-white;
+    background-color: $color-secondary-dark;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16 = 31.25em
+
+      grid-column: 2/6;
+    }
+  }
+
+  @media only screen and (max-width: 75em) {
+    // 1200px = 1200/16px = 75em
+
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    // 900px = 900/16px = 56.25em
+
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    // 500px = 500/16 = 31.25em
+
+    width: 96%;
+    grid-gap: 4rem;
+  }
+}
+
+//////////////////////////////////////////////////////////////////
+
+// @media only screen and (max-width: 68.75em) {
+//   // 1100px = 1100/16px = 68.75em
+
+//   width: 90%;
+// }
+
+// @media only screen and (max-width: 47.5em) {
+//   // 760px = 760/16px = 47.5em
+//   width: 70%;
+// }
+
+//

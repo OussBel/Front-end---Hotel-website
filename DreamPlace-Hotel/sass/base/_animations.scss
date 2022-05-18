@@ -1,0 +1,81 @@
+@keyframes slideToTop {
+  from {
+    transform: translateY(8rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuLineSlide_top-line {
+  from {
+    transform: scaleX(0) translateY(-0.9rem);
+  }
+
+  to {
+    transform: scaleX(1) translateY(-0.9rem);
+  }
+}
+
+@keyframes menuLineSlide_middle-line {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes menuLineSlide_bottom-line {
+  from {
+    transform: scaleX(0) translateY(0.9rem);
+  }
+
+  to {
+    transform: scaleX(1) translateY(0.9rem);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navLinks-slide {
+  from {
+    transform: translateX(-25vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

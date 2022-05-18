@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1000/16px,   1rem = 10px
+
+  @media only screen and (max-width: 75em) {
+    // 1200px = 1200/16px = 75em, I use em instead of px
+    // because I want the media query to be affected if
+    // the user changes the browser default font-size.
+
+    font-size: 56.26%; //  9/16px , 1rem = 9px
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    // 900px = 900/16px = 56.25em
+
+    font-size: 50%; // 8/16px , 1rem = 8px
+  }
+
+  @media only screen and (max-width: 47.5em) {
+    // 760px = 760/16px = 47.5em
+
+    font-size: 43.75%; // 7/16px , 1rem = 7px
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-white;
+  color: $color-black;
+  font-size: 1.6rem;
+}

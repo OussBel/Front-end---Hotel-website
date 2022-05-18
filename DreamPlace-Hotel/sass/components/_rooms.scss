@@ -1,0 +1,36 @@
+.rooms {
+  width: 80%;
+  margin: auto;
+
+  &__container {
+    display: flex;
+    padding-bottom: 12rem;
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    // 1100px = 1100/16px = 68.75em
+
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    // 900px = 900/16px = 56.25em
+
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 47.5em) {
+    width: 70%;
+    margin: auto;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    // 500px = 500/16px = 31.25em
+    width: 90%;
+  }
+}

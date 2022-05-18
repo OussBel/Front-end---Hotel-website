@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.heading-primary {
+  color: $color-white;
+  text-align: center;
+
+  &--main {
+    font-size: 5.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    font-family: 'Slabo 27px', serif;
+    display: block;
+    margin-bottom: 2rem;
+    animation: slideToRight 1.2s ease 1.8s backwards;
+
+    @media only screen and (max-width: 75em) {
+      // 1200px = 1200/16px = 75em
+
+      font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      // 900px = 900/16px = 56.25em
+
+      font-size: 4rem;
+    }
+  }
+
+  &--sub {
+    letter-spacing: 0.35rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    display: block;
+    text-transform: capitalize;
+    animation: slideToLeft 1.2s ease 2.5s backwards;
+
+    @media only screen and (max-width: 75em) {
+      // 1200px = 1200/16px = 75em
+
+      font-size: 2rem;
+    }
+  }
+}
+
+.heading-tertiary {
+  top: 1.2rem;
+  left: 40%;
+  font-size: 2.65rem;
+  font-weight: 600;
+  font-family: 'Slabo 27px', serif;
+
+  &--white {
+    color: $color-white;
+    animation: slideToTop 1.2s cubic-bezier(0.31, 0.53, 0.28, 0.89) 0.4s
+      backwards;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+
+  @media only screen and (max-width: 47.5em) {
+    // 760px = 760/16px = 47.5em
+  }
+}
